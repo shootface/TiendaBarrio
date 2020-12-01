@@ -2,7 +2,7 @@ from flask import Flask
 import pymysql
 import requests
 
-app = Flask(__name__)
+app = Flask(__name__)  
 
 class DataBase:
     def __init__(self):
