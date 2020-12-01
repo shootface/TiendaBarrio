@@ -36,5 +36,10 @@ def pedido(idPro,idUse, cantidad):
     db = DataBase()
     return str(db.regisPedido(idPro,idUse,cantidad))
 
+@app.route("/pedidos/")
+def pedido(idPro,idUse, cantidad):
+    db = DataBase()
+    return str(db.regisPedido(idPro,idUse,cantidad))
+
 if __name__ == "__main__": 
     app.run(host='0.0.0.0',debug=True) 
